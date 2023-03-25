@@ -4,7 +4,7 @@
    include('../config/constants.php');
 
    //1.get the ID of admin to be deletd
-   $id = $_GET['id']
+   $id = $_GET['id'];
 
    //2. Create SQL Query to deletd admin
    $sql = "DELETE FROM tbl_admin WHERE id=$id";
@@ -25,4 +25,5 @@
    }
 
    //3.redirect to manage admin page with maessage (success/error) 
+   
 ?>
