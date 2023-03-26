@@ -18,7 +18,7 @@
         //query executed successfully anc admin deleted
        // echo "Admin Deleted";
        //create session variable to display message
-       $_SESSION['delete'] = "<div class='success'>Admin Deleted Successfully.</div>";
+       $_SESSION['delete'] = "<div class='success' style='color: #2ed573'>Admin Deleted Successfully.</div>";
        //redirect to manage admin page
        header('location:' .SITEURL.'admin/manage-admin.php');
    }
