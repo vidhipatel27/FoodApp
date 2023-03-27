@@ -30,7 +30,7 @@
                               categories
                         </div>
 
-                  <div class="clearfix"></div>
+                        <div class="clearfix"></div>
                   </div>
             </div>
             <!-- Menu Content Section Ends -->
