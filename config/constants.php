@@ -4,7 +4,7 @@
        
 
     //create constant to store non repeating values
-    define('SITEURL','http://localhost/FoodApp/');
+    define('SITEURL','http://localhost/food/');
     define('LOCALHOST','localhost');
     define('DB_USERNAME','root');
     define('DB_PASSWORD','');
