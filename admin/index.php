@@ -32,6 +32,7 @@
 
                  <div class="clearfix"></div>
             </div>
+</div>
             <!-- Menu Content Section Ends -->
 
 <?php include('partials/footer.php')?>           
