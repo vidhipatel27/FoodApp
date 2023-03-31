@@ -18,6 +18,30 @@
                         echo $_SESSION['delete'];
                         unset($_SESSION['delete']);
                     }
+
+                    if(isset($_SESSION['update']))
+                    {
+                        echo $_SESSION['update'];
+                        unset($_SESSION['update']);
+                    }
+
+                    if(isset($_SESSION['user-not-found']))
+                    {
+                        echo $_SESSION['user-not-found'];
+                        unset($_SESSION['user-not-found']);
+                    }
+
+                    if(isset($_SESSION['pwd-not-match']))
+                    {
+                        echo $_SESSION['pwd-not-match'];
+                        unset($_SESSION['pwd-not-match']);
+                    }
+
+                    if(isset($_SESSION['change-pwd']))
+                    {
+                        echo $_SESSION['change-pwd'];
+                        unset($_SESSION['change-pwd']);
+                    }
                 ?>
 
                 <br><br><br>
@@ -44,7 +68,7 @@
                         {
                             //count rows to check whether we have data in database or not
                            $count = mysqli_num_rows($res);//function to get all the rows in database
-                           
+
                            $sn=1;//create a variable and assign the value
 
                             //check the num of rows
@@ -64,10 +88,11 @@
                                     //display the value u our table
                                     ?>
                                     <tr>
-                                        <td><?php echo $sn++; ?></td>
+                                        <td><?php echo $sn++; ?>.</td>
                                         <td><?php echo $full_name; ?></td>
-                                        <td><?php $username?></td>
+                                        <td><?php echo $username; ?></td>
                                         <td>
+                                            <a href="<?php echo SITEURL; ?>admin/update-password.php?id=<?php echo $id; ?>" class="btn-primary">Change Password</a>
                                             <a href="<?php echo SITEURL; ?>admin/update-admin.php?id=<?php echo $id; ?>" class="btn-secondary">Update Admin</a>
                                             <a href="<?php echo SITEURL; ?>admin/delete-admin.php?id=<?php echo $id; ?>" class="btn-danger">Delete Admin</a>
                                         </td>
@@ -91,6 +116,7 @@
 
                  <div class="clearfix"></div>
             </div>
+</div>
             <!-- Menu Content Section Ends -->
 
 
