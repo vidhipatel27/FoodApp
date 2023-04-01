@@ -1,6 +1,5 @@
 <?php include('partials/menu.php'); ?>
 
-aaa
 <div class="main-content">
     <div class="wrapper">
         <h1>Add Admin</h1>
